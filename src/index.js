@@ -1,4 +1,5 @@
 import './styles.css';
+import './images/starmap.png';
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -13,25 +14,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-// Form submission handling
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(this);
-        const data = Object.fromEntries(formData);
-        
-        // Here you would typically send the data to a server
-        console.log('Form submitted:', data);
-        
-        // Show success message
-        alert('Thank you for your message! I will get back to you soon.');
-        this.reset();
-    });
-}
 
 // Add scroll-based animations
 const observerOptions = {
@@ -48,7 +30,8 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all sections
-document.querySelectorAll('section').forEach(section => {
-    observer.observe(section);
-}); 
+// Observe the projects section
+const projectsSection = document.querySelector('.projects');
+if (projectsSection) {
+    observer.observe(projectsSection);
+} 

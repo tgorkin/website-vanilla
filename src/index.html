@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>My Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -11,65 +11,37 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <div class="logo">Your Name</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="logo">tgorkin.dev</div>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <h1>Welcome to My Portfolio</h1>
-                <p>I'm a passionate developer creating amazing web experiences</p>
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>Add your personal information here.</p>
-            </div>
-        </section>
-
         <section id="projects" class="projects">
             <div class="container">
-                <h2>My Projects</h2>
                 <div class="project-grid">
-                    <!-- Project cards will be added here -->
+                    <a href="starmap/index.html" class="project-card" style="text-decoration: none; color: inherit;">
+                        <div class="project-image">
+                            <img src="images/starmap.png" alt="StarMap Screenshot">
+                        </div>
+                        <div class="project-content">
+                            <h3>StarMap</h3>
+                            <p>An interactive 3D visualization of the Milky Way galaxy built with Three.js. Explore the cosmos through a beautiful and intuitive interface.</p>
+                            <div class="project-links">
+                                <span class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"></path></svg>
+                                    View Live
+                                </span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Get in Touch</h2>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit">Send Message</button>
-                </form>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; 2025 tgorkin.dev. All rights reserved.</p>
         </div>
     </footer>
 </body>
