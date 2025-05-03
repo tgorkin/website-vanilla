@@ -38,7 +38,8 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'src/starmap', to: 'starmap' }
+        { from: 'src/starmap', to: 'starmap' },
+        { from: 'src/starmap/public', to: 'public' }
       ]
     })
   ],
